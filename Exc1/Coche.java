@@ -1,8 +1,8 @@
 public class Coche {
     private int puertas;
 
-    public Coche(int p) {
-        puertas = p;
+    public Coche() {
+        puertas = 0;
     }
 
     public void incrementar(int p) {
@@ -14,8 +14,8 @@ public class Coche {
     }
 
     public static void main(String[] args) {
-        Coche miCoche = new Coche(2);
-        miCoche.incrementar(2);
+        Coche miCoche = new Coche();
+        miCoche.incrementar(1);
         System.out.println("La cantidad de puertas del auto es: " + miCoche.obtenerPuertas());
     }
 }
